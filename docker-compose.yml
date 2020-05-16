@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  apk:
+    image: nginx
+    volumes:
+      - /Users/relecto/CodeBase/Svue/android/app/build/outputs/apk/release:/usr/share/nginx/html:ro
+    ports:
+      - "80:80"
